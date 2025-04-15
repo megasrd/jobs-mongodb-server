@@ -5,8 +5,6 @@ const app = express();
 app.use(cors()) // Enable CORS for all routes
 require('dotenv').config(); // For environment variables
 
-console.log(process.env.DB_PASSWORD); // Debugging line to check if the password is loaded
-
 const PORT = process.env.PORT || 4000;
 
 // --- MongoDB Configuration ---
