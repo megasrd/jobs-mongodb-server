@@ -1,6 +1,8 @@
 const express = require('express');
+const cors = require('cors')
 const { MongoClient, ServerApiVersion } = require('mongodb'); // Keep your MongoDB imports
 const app = express();
+app.use(cors()) // Enable CORS for all routes
 require('dotenv').config(); // For environment variables
 
 console.log(process.env.DB_PASSWORD); // Debugging line to check if the password is loaded
